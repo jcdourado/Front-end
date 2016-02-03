@@ -25,6 +25,22 @@
 Block: exmplos p, div, heading
 	Ocupam toda a largura do documento, tanto antes quanto depois
 
-Inline: somente o espaço necessário...
+Inline: somente o espaço necessário, exibindo elementos inline nas mesma linha
 
-	-->
+Tem o atributo display do CSS para alterar essa cfg
+
+Position: static, relative, absolute, fixed
+	Ela determina qual é o modo de posicionamento do elemnto
+	Absolute: determina em relação ao pai, nao ao documento
+	Fixed: fica fixo na tela, mesmo com rolagem
+
+Há comentarios condicionais, assim permite que o navegador especifico execute algumas instrucoes
+
+Para dar suporte a versoes anteriores ao IE9
+	Solucao em codigo aberto: https://github.com/afarkas/html5shiv
+	
+	Apenas incluir no head: 
+
+	<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif] -->
