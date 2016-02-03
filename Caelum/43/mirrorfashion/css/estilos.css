@@ -100,22 +100,30 @@ header{
 	margin: 10px 0;
 	padding: 10px;
 	width: 445px;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 4px #999;
 }
 
 .novidades{
 	float: left;
+  background-color: #f5dcdc;
+  background: linear-gradient(#f5dcdc, #bebef4);
+
 }
 
 .mais-vendidos{
+  background: #dcdcf5;
+  background: linear-gradient(#dcdcf5, #f4bebe);
 	float: right;
 }
 
-.painel h2 {
+.painel h2{
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
 
   margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
 .painel a {
