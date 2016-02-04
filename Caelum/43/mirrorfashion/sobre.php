@@ -26,8 +26,6 @@ distribuem nossos produtos às casas do mundo todo. Nosso centro de distribuiç�
 		<p>Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.html">nossa loja</a> ou entre em contato 
 se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>. <p>
 
-
-
 	<h2 id="historia">História</h2>
 
 		<figure id="familia-pelho">
@@ -35,7 +33,7 @@ se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e no
 		  <figcaption>Família Pelho</figcaption>
 		</figure>
 
-		<p>A fundação em 1932 ocorreu no momento da descoberta econônica do interior do Paraná. A 
+		<p>A fundação há <?php print date("Y") - 1932; ?> anos, ocorreu no momento da descoberta econônica do interior do Paraná. A 
 família <em>Pelho</em>, tradicional da região, investiu todas as suas economias nessa nova iniciativa, 
 revolucionária para a época. O fundador <em>Eduardo Simões Pelho</em>, dotado de particular visão 
 administrativa, guiou os negócios da empresa durante mais de 50 anos, muitos deles ao lado 
@@ -68,6 +66,9 @@ Fashion, além de presidentes da União Européia, Ásia e o secretário-geral d
 		</ul>
 
 	<div id="rodape">
+		<?php
+		   print date('Y');
+		?>
 		<img src="img/logo.png">
    		&copy; Copyright Mirror Fashion
 	</div>
