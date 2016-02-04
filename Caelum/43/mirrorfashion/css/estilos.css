@@ -108,7 +108,8 @@ header{
 .novidades{
 	float: left;
   background-color: #f5dcdc;
-  background: linear-gradient(#f5dcdc, #bebef4);
+  background: linear-gradient(#f5dcdc, #bebef4); /*vai sobrescrever o anterior */
+  
 
 }
 

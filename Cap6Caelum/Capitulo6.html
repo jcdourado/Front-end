@@ -1,0 +1,41 @@
+<!-- 
+	Web para dispositivos moveis
+	
+	Usa-se os chamados media-types (Que tinha 3 tipos: print, screen e handheld) mas com o crescente uso de celulares, ele caiu em desuso
+	
+	Media-Queries: mais especifico para cada tela:
+
+		<link rel="stylesheet" href="mobile.css" media="(max-width: 480px)">
+		
+		ou
+
+		@media screen {
+		  body {
+		    font-size: 16px;
+		  }
+		}
+
+		@media (max-width: 480px) {
+		  body {
+		    font-size: 12px;
+		  }
+		}
+
+	Mas ainda assim, celulares podem ter uma resolução maior que essa
+	Solução: viewports: que usa um valor definido pelo fabricante:
+		
+		Se declara isso no html para pegar o tamanho definido:
+		<meta name="viewport" content="width=device-width">
+
+	No link para o CSS coloca o max-width em media
+
+	Responsive Web Design:
+		Layout fluido usando medidas flexiveis (porcentagens)
+		Media queries e imagens flexiveis
+
+	Mobile-First: pensar em mobile antes do desktop, usa-se o min-width ao invez do max
+	
+	320px - celulares 
+	480px - IPhone em paisagem
+	768px - IPad
+	-->
