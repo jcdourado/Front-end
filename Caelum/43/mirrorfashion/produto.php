@@ -10,7 +10,7 @@
         <h1>Fuzzy Cardigan</h1>
         <p>por apenas R$ 129,00</p>
 
-        <form>
+        <form action="checkout.php" method="post">
             <fieldset class="cores">
                 <legend>Escolha a cor:</legend>
 
@@ -28,7 +28,11 @@
                 <label for="azul">
                   <img src="img/produtos/foto2-azul.png" alt="azul">
                 </label>
-                
+
+                <input type="hidden" name="nome" value="Fuzzy Cardigan">
+                <input type="hidden" name="preco" value="129.00">
+                <!-- os nomes dos radio do mesmo grupo precisam ser os mesmos -->
+
             </fieldset>
 
             <fieldset class="tamanhos">
@@ -40,6 +44,11 @@
 
             <input type="submit" class="comprar" value="Comprar">
         </form>
+        Agência 0156 2
+Conta 2575 5 
+Ruan Carlo Estelai
+Conta corrente
+Bradesco
       </div>
 
       <div class="detalhes">
