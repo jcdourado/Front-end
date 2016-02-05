@@ -1,0 +1,26 @@
+<!--
+	form - escolher entre as opcoes e enviar a escolha
+
+	label for="" - indicar o nome do input(pode-se colocar imagens), fica embaixo do input
+
+	Para dar sentido semantico coloca-se fieldset após a abertura do form e legend para legendar.
+
+	Progressive enhancement: construir uma base sólida, simples, portável e acessível e, depois, progressivamente, incrementar a página com recursos mais avançados tanto de estilo com CSS quanto de comportamento com JavaScript.
+
+	Box-sizing: 
+		content-box: o tamanho é definido pelo conteudo apenas(normal)
+		border-box: o tamanho leva em conta até a borda
+
+	 O firefox presume que o legend nao faz parte do fieldset, por isso se da o absolute e se coloca esse codigo para aplciar IMAGENS RESPONSIVAS A ele:
+
+			 @media (min--moz-device-pixel-ratio:0) {
+			  fieldset {
+			    display: table-column;
+			  }
+			}
+	
+	Dar width em % para adptar imagens para nao sair do fluxo
+	
+	break-point: pontos onde o layout vai ser ajustado
+
+	-->

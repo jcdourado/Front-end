@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-	<title><?php print $cabecalho_title; print @$cabecalho_css; ?></title>
+	<title><?php print $cabecalho_title;?></title>
 
 	<link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
+    <?php  print @$cabecalho_css; ?>
     
     <meta name="viewport" content="width=device-width">
   </head>
