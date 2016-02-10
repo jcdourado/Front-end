@@ -45,7 +45,7 @@
 
 			<ol>
 				<li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura1.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -54,7 +54,7 @@
 			    </li>
 			    
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura2.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -63,7 +63,7 @@
 			    </li>
 
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura3.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -72,7 +72,7 @@
 			    </li>
 
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura4.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -81,7 +81,7 @@
 			    </li>
 
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura5.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -90,7 +90,7 @@
 			    </li>
 
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura6.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -105,7 +105,7 @@
 
 			<ol>
 				<li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura1.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -114,7 +114,7 @@
 			    </li>
 			    
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura2.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -123,7 +123,7 @@
 			    </li>
 
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura3.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -132,7 +132,7 @@
 			    </li>
 
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura4.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -141,7 +141,7 @@
 			    </li>
 
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura5.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
@@ -150,7 +150,7 @@
 			    </li>
 
 			    <li>
-			       <a href="produto.html">
+			       <a href="produto.php">
 			          <figure>
 			            <img src="img/produtos/miniatura6.png">
 			            <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
