@@ -223,3 +223,14 @@ footer .container{
   transition:  0.7s ease-out;
   transform: scale(1.2) rotate(-5deg);
 }
+
+.painel button {
+  display: none;
+}
+
+.painel-compacto li:nth-child(n+7) { /*6 é o limite */
+  display: none;
+}
+.painel-compacto button {
+  display: block;
+}

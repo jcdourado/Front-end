@@ -101,6 +101,8 @@
 			    </li>
 			</ol>
 		</section>
+		<button type="button">Mostra mais</button>
+
 
 		<section class="painel mais-vendidos">
 			<h2>Mais Vendidos</h2>
@@ -162,9 +164,14 @@
 			</ol>
 			</ol>
 		</section>
+		<button type="button">Mostra mais</button>
+
 	</div>
 
   	<?php include("rodape.php"); ?>
+  	<script src="js/jquery.js"></script>
+	<script src="js/home.js"></script>
+
 	<script src="js/converteMoeda.js"></script>
 	<script src="js/testaConversao.js"></script>
 	<script src="js/scriptRotacao.js"></script>
