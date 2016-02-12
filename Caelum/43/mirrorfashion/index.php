@@ -1,7 +1,7 @@
   	<?php 
   	$cabecalho_title = "Mirror Fashion";
+ 	$seg_css = '<link rel="stylesheet" href="css/seg_css.css">';
   	include("cabecalho.php"); ?>
-
 	<div class="container destaque">
 
 		<section class="busca">
@@ -36,6 +36,8 @@
 		</section>
 
 		<img src="img/destaque-home.png" alt="Promoção: Big City Night">
+		<a href="#" class="pause"></a>
+
 
 	</div>
 
@@ -163,6 +165,8 @@
 	</div>
 
   	<?php include("rodape.php"); ?>
-	
+	<script src="js/converteMoeda.js"></script>
+	<script src="js/testaConversao.js"></script>
+	<script src="js/scriptRotacao.js"></script>
   </body>
 </html>

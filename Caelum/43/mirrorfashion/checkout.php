@@ -50,23 +50,31 @@ body{
 
 				  <div class="panel-body">
 					<img src="img/produtos/foto1-<?= $_POST["cor"] ?>.png" class="img-thumbnail img-responsive hidden-xs">
-				  <dl>
-				    <dt>Cor</dt>
-					  <dd><?= $_POST["cor"] ?></dd>
+				  	<dl>
+					    <dt>Produto</dt>
+					    <dd><?= $_POST["nome"] ?></dd>
+					    <dt>Preço</dt>
+					    <dd id="preco"><?= $_POST["preco"] ?></dd>
+					    <dt>Cor</dt>
+					    <dd><?= $_POST["cor"] ?></dd>
+					    <dt>Tamanho</dt>
+					    <dd><?= $_POST["tamanho"] ?></dd>
+					  </dl>
 
-					  <dt>Tamanho</dt>
-					  <dd><?= $_POST["tamanho"] ?></dd>
-					  
-					  <dt>Produto</dt>
-					  <dd><?= $_POST['nome'] ?></dd>
-
-					  <dt>Preço</dt>
-					  <dd><?= $_POST['preco'] ?></dd>
-				  </dl>
-
+					  <div class="form-group">
+					    <label for="qt">Quantidade</label>
+					    <input id="qt" class="form-control" type="number" min="0" max="99"
+					      value="1">
+					  </div>
+					  <div class="form-group">
+					    <label for="total">Total</label>
+					    <output for="qt valor" id="total" class="form-control">
+					      <?= $_POST["preco"] ?>
+					    </output>
+					  </div>
+					</div>
 				  </div>
 		  </div>
-		</div>
 
 	  <div class="col-sm-8">
 
@@ -136,5 +144,8 @@ body{
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/converteMoeda.js"></script>
+<script src="js/testaConversao.js"></script>
+<script src="js/total.js"></script>
+
 </body>
 </html>
