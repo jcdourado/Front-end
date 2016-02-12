@@ -100,8 +100,9 @@
 			       </a>
 			    </li>
 			</ol>
+			<button type="button">Mostra mais</button>
+
 		</section>
-		<button type="button">Mostra mais</button>
 
 
 		<section class="painel mais-vendidos">
@@ -163,8 +164,9 @@
 			    </li>
 			</ol>
 			</ol>
+			<button type="button">Mostra mais</button>
+
 		</section>
-		<button type="button">Mostra mais</button>
 
 	</div>
 

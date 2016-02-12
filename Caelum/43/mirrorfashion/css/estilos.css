@@ -232,5 +232,35 @@ footer .container{
   display: none;
 }
 .painel-compacto button {
+  display: none;
+}
+
+.painel button {
+  color: white;
+  position: relative;
+  margin-bottom: 10px;
+}
+.painel button:after {
+  /* elemento vazio */
+  content: '';
   display: block;
+  height: 0;
+  width: 0;
+
+  /* triangulo */
+  border-top: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  /* posicionamento */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+
+  /* animação */
+  transition: 0.3s;
+}
+.painel button:hover:after {
+  border-top-color: #393939;
 }
