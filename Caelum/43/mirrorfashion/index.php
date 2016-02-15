@@ -1,6 +1,7 @@
   	<?php 
   	$cabecalho_title = "Mirror Fashion";
- 	$seg_css = '<link rel="stylesheet" href="css/seg_css.css">';
+ 	$seg_css = '<link rel="stylesheet" href="css/seg_css.css"> <link href="http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script" 
+  rel="stylesheet">';
   	include("cabecalho.php"); ?>
 	<div class="container destaque">
 

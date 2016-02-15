@@ -39,16 +39,12 @@
               <legend>Escolha o tamanho</legend>
               <input type="range" min="36" max="46" step="2" name="tamanho"
               id ="tamanho">
+              <output for="tamanho" name="valortamanho">42</output>
 
             </fieldset>
 
             <input type="submit" class="comprar" value="Comprar">
         </form>
-        Agência 0156 2
-Conta 2575 5 
-Ruan Carlo Estelai
-Conta corrente
-Bradesco
       </div>
 
       <div class="detalhes">
@@ -92,6 +88,9 @@ Bradesco
         include("rodape.php");
       ?>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/produto.js"></script>
+    <script src="js/inputmask-plugin.js"></script>
 
     </body>
   </html>

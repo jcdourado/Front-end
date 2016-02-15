@@ -10,7 +10,7 @@
   	<img src = "img/logo.png">
 
   	<h1>A Mirror Fashion</h1>
-
+  		<iframe width="420" height="315" src="https://www.youtube.com/embed/Tb06abHE4hY" frameborder="0" allowfullscreen></iframe>
 		<p>A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
 Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
 participação em 118 deles.</p>
@@ -32,7 +32,9 @@ se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e no
 		  <img src="img/familia-pelho.jpg">
 		  <figcaption>Família Pelho</figcaption>
 		</figure>
-
+		<iframe width="425" height="350" frameborder="0" 
+		scrolling="no" marginheight="0" marginwidth="0" 
+		src="http://maps.google.com.br/maps?q=Jacarezinho&amp;output=embed"></iframe>
 		<p>A fundação há <?php print date("Y") - 1932; ?> anos, ocorreu no momento da descoberta econônica do interior do Paraná. A 
 família <em>Pelho</em>, tradicional da região, investiu todas as suas economias nessa nova iniciativa, 
 revolucionária para a época. O fundador <em>Eduardo Simões Pelho</em>, dotado de particular visão 
