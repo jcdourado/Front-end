@@ -1,0 +1,45 @@
+#container{
+	margin: 0 auto;
+	max-width: 95%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#menu-top{
+	list-style-type: none;
+}
+
+.cabecalho{
+	position: relative;
+}
+
+#menu-top li a{
+	text-decoration: none;
+}
+
+#btn-menu{
+	position: absolute;
+	bottom: -29%;
+	left: 40%;
+	width: 20%;
+	height: 30%;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	border-radius: 20%;
+	text-decoration: none;
+}
+
+nav ul#menu-top{
+	display: none;
+}
+
+#btn-menu:hover {
+	color: black;	
+}
+
+nav a#btn-menu:hover ul#menu-top{
+	display: inline-block;	
+}
+
+
+
