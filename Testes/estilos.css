@@ -2,6 +2,13 @@
 	margin: 0 auto;
 	max-width: 95%;
 	font-family: 'Open Sans', sans-serif;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 */
+	background: #e1ffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=0 ); /* IE6-9 */
+	font-size: 0.8em;
 }
 
 #menu-top{
@@ -14,32 +21,37 @@
 
 #menu-top li a{
 	text-decoration: none;
+	color: black;
 }
 
-#btn-menu{
-	position: absolute;
-	bottom: -29%;
-	left: 40%;
-	width: 20%;
-	height: 30%;
-	background-color: blue;
-	color: white;
-	text-align: center;
-	border-radius: 20%;
-	text-decoration: none;
+#menu-top li{
+	margin: 2%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+	background: #f5f6f6; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 30%;
+	padding: 1%;
+	display: inline-block;
 }
 
-nav ul#menu-top{
-	display: none;
+@media (min-width: 700px){
+	#menu-lado{
+		float: right;
+		width: 30%;
+		background-color: black;
+	}
+	#principal{
+		float: left;
+		width: 60%;
+	}
+	footer{
+		clear: both;
+	}
+	#menu-top{
+		margin-left: 20%;
+	}
 }
-
-#btn-menu:hover {
-	color: black;	
-}
-
-nav a#btn-menu:hover ul#menu-top{
-	display: inline-block;	
-}
-
-
-
