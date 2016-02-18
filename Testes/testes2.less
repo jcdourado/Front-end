@@ -1,0 +1,29 @@
+@cor: blue;
+
+header{
+	background-color: @cor;
+	h1{
+		background-color: red;
+	}
+	h2{
+		color: @cor;
+	}
+	&h2{
+		background-color: white;
+		color: spin(@cor,20%);
+	}
+}
+
+.footer(@raio: 5px) when (isem(@raio)){
+	.logo{
+		@cor: white;
+		background-color: @cor;
+	}
+	 -webkit-border-radius: @raio;
+	 -moz-border-radius: @raio;
+	      border-radius: @raio;
+}
+
+.painel {
+   .footer(10px);
+}
