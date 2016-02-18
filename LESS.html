@@ -1,0 +1,45 @@
+<!--
+	LESS: Linguagem baseada em CSS (mesma ideia).
+	É um pré-processador, pois o resultado final é CSS puro mesmo.
+	Dá pra fazer com JS no navegador
+
+	Variaveis: sempre usam "@"
+				EX: @cor: cor
+					uso: @cor;
+
+	Contas, da pra fazer com variaveis
+
+	Escrever regras de maneira hierarquica, com os seletetores dentro de outros seletores
+
+	Funcoes: saturate, lighten, darken, desaturate, fadein, fadeout, spin, mix, round.
+
+	Funcoes proprias: Mixins: Propriedades de classes para ajudar em outras
+
+			.arredonda(@raio: 5px) {
+			  -webkit-border-radius: @raio;
+			     -moz-border-radius: @raio;
+			          border-radius: @raio;
+			}
+			.painel {
+ 			  .arredonda(10px);
+			}
+
+	Tem if/else usando o When:
+			.mixin (@a, @b: 0) when (isnumber(@b)) { ... }
+				iscolor
+				isnumber
+				isstring
+				iskeyword
+				isurl
+				ispixel
+				ispercentage
+				isem
+
+	Ceil, floor e round - arredondar
+	Usando "&" nos seletores aninhados, ele chama o pai a fazer parte
+	@import para importar
+
+	Compilar online: http://lesstester.com/
+	Lado Cliente: baixa o less.js e salva o estilo como "nome.less"
+	Lado Server: pelo npm, 
+	-->
