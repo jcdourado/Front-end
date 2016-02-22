@@ -8,7 +8,7 @@
 
 	undefined: variavel nao definida (sem valor)
 
-	Usa-se "," ou "+" para concatenar variaveis
+	Usa-se "+" para concatenar variaveis
 
 	alert, confirm, prompt(o segundo parametro é o valor default)
 
