@@ -14,4 +14,5 @@
 
 	Para converter um valor: Number() - caso nao consiga, retorna NaN
 
+	if, while, for, break, do while, switch case, 
 */
