@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Meus testes</title>
+		<script>
+			function range(start, end, increment){
+
+				var array = [];
+				if(start <= end){
+					if(increment == null || increment == undefined){
+						increment = 1;
+					}
+					while(start <= end){
+						array.push(start);
+						start = start + increment;
+					}
+				}
+				else{
+					if(increment == null || increment == undefined){
+						increment = -1;
+					}
+					while(start >= end){
+						array.push(start);
+						start = start + increment;
+					}
+				}
+				return array;
+			}
+
+			function sum(array){
+				var result = 0;
+				for(var i in array){
+					result += Number(array[i]);
+				}
+				return result;
+			}
+
+			console.log(range(5, 2));
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>

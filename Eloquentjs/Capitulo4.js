@@ -29,7 +29,8 @@
 	Math:
 		min, sqrt(raiz), max, cos, sin(seno), tan, aos, asin, atan, PI, random
 												   Funcoes inversas
-												   
+
 		floor(arredonda pra baixo), ceil(cima), round(o mais prox)
 
+	Escopo global, o window, (onde todas as vars ficam) pode ser tratado como um objeto
 */
