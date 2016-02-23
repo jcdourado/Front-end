@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Meus testes</title>
+		<script>
+		var tamanho = Number(prompt("Qual o tamanho?","8"));
+		var cont = 0;
+		var exibir = "";
+		for(var x = 0; x < tamanho ; x++){
+			for(var y = 0; y < tamanho ; y++){
+				if(cont == 1){
+					exibir += "#";
+					cont = 0;
+				}
+				else {
+					exibir += " ";
+					cont = 1;
+				}
+			}
+			if(x%2==1){
+				cont = 0;
+			}
+			else{
+				cont = 1;
+			}
+			exibir += "\n";
+		};
+		console.log(exibir);
+
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>
