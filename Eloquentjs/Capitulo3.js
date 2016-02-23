@@ -11,4 +11,6 @@
 	Se passar mais argumentos que o necessário, ele ignora
 	Se passar menos argumentos, eles viram undefined
 
+	Closure: retornar uma funcao que da acesso á uma var local
+	Permite recursão
 /*
