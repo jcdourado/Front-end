@@ -13,4 +13,6 @@
 
 	Closure: retornar uma funcao que da acesso á uma var local
 	Permite recursão
+
+	Funcao: lengthm, Math.min
 /*
