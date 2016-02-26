@@ -8,7 +8,7 @@
 	Para criar um novo tipo de exception;
 		"erro".prototype = Object.create(Error.prototype)
 
-	Assertions:
-		
+	Assertions: sem a pilha do Erro
+
 
 */
