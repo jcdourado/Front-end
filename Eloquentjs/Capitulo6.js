@@ -12,9 +12,15 @@
 	Construtores sao criados como qualquer outra funcao - chama pelo new
 	
 	"Classe".prototype."metodo" - adicionar um metodo
+	Também da pra colocar metodos dentro dos objetos: 
+		this."metodo" ....
 
 	instanceof
 
-	
+	"Filha".prototype = new "Mae" - Heranca
+
+	Variaveis privadas: declara var "nomeVar" dentro do objeto - metodos tbm
+
+	for in acessa todo o conteudo do objeto
 
 */
