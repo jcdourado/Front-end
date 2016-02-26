@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Meus testes</title>
+		<script>
+		function MultiplicatorUnitFailure(message) {
+			this.message= message;
+			this.stack= (new Error()).stack;
+		}
+
+		MultiplicatorUnitFailure.prototype = Object.create(Error.prototype);
+
+		MultiplicatorUnitFailure.prototype.name = "Error";
+
+		function primitiveMultiply(a, b) {
+		    if (Math.random() < 0.5)
+		        return a * b;
+		    else
+		        throw new MultiplicatorUnitFailure("Erro");
+		}
+
+		function reliableMultiply(a, b) {
+		  	try{
+		  		return primitiveMultiply(a,b);
+		  	}
+		  	catch(e){
+		  		return null;
+		  	}
+		  	
+		}
+
+		console.log(reliableMultiply(8, 8)); // 64
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>
