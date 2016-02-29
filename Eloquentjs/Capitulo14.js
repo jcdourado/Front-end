@@ -30,5 +30,7 @@
 
 	String.fromCharCode(event.charCode)
 
+ 	encodeURIComponent  e decodeURIComponent - para URL
 
+ 	
 */
