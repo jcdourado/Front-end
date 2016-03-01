@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Meus testes</title>
+
+	</head>
+
+	<body>
+    <input type="checkbox" id="purple">
+    <label for="purple">Make this page purple</label>
+
+    <script>
+      var checkbox = document.querySelector("#purple");
+         checkbox.addEventListener("change", function() {
+            document.body.style.background =
+         checkbox.checked ? "mediumpurple" : "pink";
+      });
+    </script>
+
+	</body>
+</html>
