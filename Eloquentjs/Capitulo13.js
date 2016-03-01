@@ -31,7 +31,6 @@
 	querySelectorAll e querySelector
 
 	requestAnimationFrame - solicitar ao navegador para fazer a animação
-	
 
 	
 	Comparar tipos:
@@ -42,5 +41,10 @@
 		Pode ser sem o "var"
 		Definifidas dentros de ifs, etc
 		Em funcoes, elas viram locais, a nao ser sem o "var"
+
+	Nao tem classes, apenas funcoes
+	Funcoes assim: function funcao(){} dentro dos objetos, sao funcoes privadas, e nao tem acesso as vars privadas,
+	Funcoes assim: var g = function(){} sao privadas mas tem acesso a vars internas
+
 
 */
