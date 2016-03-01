@@ -46,5 +46,7 @@
 	Funcoes assim: function funcao(){} dentro dos objetos, sao funcoes privadas, e nao tem acesso as vars privadas,
 	Funcoes assim: var g = function(){} sao privadas mas tem acesso a vars internas
 
+	Metodo: apply(body,args) e call(elemento,args)
+	
 
 */
