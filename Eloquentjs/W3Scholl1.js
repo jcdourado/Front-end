@@ -9,10 +9,14 @@
 		.innerHTML = "" -> só pode ser feito pelo document.getElementById
 		document.write("")
 
-		
 
+	Caso seja reescrita alguma por um valor undefined, ele ignora
 
+	Undefined -> tipo undefined
+	Null -> tipo object
 	
-	
+	Funcao sem () - apresenta o conteudo da funcao
+
+	() -> chama a funcao anterior, automaticamente
 
 */
