@@ -36,6 +36,9 @@
 		Datas podem ser comparadas - so usar ">" ou o que quiser
 
 	Array.isArray()
+		sort,reverse
+
+	Boolean()
 
 
 */
