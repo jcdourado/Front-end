@@ -10,5 +10,10 @@
 	history.back e foward
 
 
+-
+
+	Object.create() - copia de um objeto ja existente
+	Object.defineProperty(obj,'propriedade',funcoes (get,set,value,etc))
+
 
 */
