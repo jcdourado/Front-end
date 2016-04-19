@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Converta seu IP!</title>
+	<meta charset="utf-8">
+	<style>
+		input, button{
+			display: block;
+			margin-bottom: 1%;
+		}
+
+	</style>
+</head>
+<body>
+	<label>IP:</label>
+	<input type="text" size="16" maxlength="16" id="IPin"></input>
+	<label>Mascara:</label>
+	<input type="text" size="16" maxlength="16" id="Mascarain"></input>
+
+	<button id="btn">Converta</button>
+
+	<label>Primeiro IP:</label>
+	<input type="text" size="16" id="IPStartOut"></input>
+	<label>Ultimo IP:</label>
+	<input type="text" size="16" id="IPEndOut"></input>
+
+	<script>
+		document.getElementById("btn").addEventListener("click", pegaIPin)
+
+		function pegaIPin(){
+			var IPin = document.getElementById("IPin").value;
+			arrayGeral = IPin.split(".");
+			var Mascarain = document.getElementById("Mascarain").value;
+			var obj = pegaCasa(Mascarain);
+			obj['qtd'] = qntdParticoes(obj['qnt']);
+			var retorno = pegaLimites(obj);
+			arrayGeral[obj['id']] = retorno['limite'];
+			arrayGeralFinal = IPin.split(".");
+			arrayGeralFinal[obj['id']] = retorno['limiteAnterior'];
+
+			var startOut = arrayGeralFinal.join(".");
+			var endOut = arrayGeral.join(".");
+
+			var startHelper = [];
+			var endHelper = [];
+
+			var arrayMasc = Mascarain.split('.');
+
+			var arrStart = startOut.split(".");
+
+			var arrEnd = endOut.split(".");
+
+			for (var ip in arrayMasc) {
+				if(arrayMasc[ip] == 0){
+					arrStart[ip] = 0;
+					arrEnd[ip] = 255;
+				}
+			}
+
+
+			startOut = arrStart.join(".");
+			endOut = arrEnd.join(".");
+
+			document.getElementById("IPStartOut").value = startOut;
+			document.getElementById("IPEndOut").value = endOut;
+
+		}
+
+
+		function qntdParticoes(numero){
+			if(numero){
+				return 256/numero;
+			}
+			return 1;
+		}
+
+		function pegaCasa(numero){
+			var total = numero.split(".");
+			var stringFinal = "";
+			for(var i in total){
+				if(total[i] != "255"){
+					var obj = {'id': i, 'qnt': total[i]};
+					return obj;
+				}
+			}
+		}
+
+		function pegaLimites(objeto){
+			var limite = 256/objeto['qtd'];
+			var Oldlimite = limite;
+			limite -= 1;
+			var limiteAnterior = 0;
+			objeto['qtd'] = Number(objeto['qtd']);
+
+			var newLimite = limite;
+
+			if(limite == -1){
+				var newObj = {'limiteAnterior' : 0, 'limite' : 255};
+				return newObj;
+			}
+
+			while(limite < 256){
+
+				if(limiteAnterior <= arrayGeral[objeto['id']] && limite >= arrayGeral[objeto['id']]){
+					var newObj = {'limiteAnterior' : limiteAnterior, 'limite' : limite};
+					return newObj;
+				}
+
+				limite = limite + Oldlimite;
+				limiteAnterior += Oldlimite;
+			}
+
+
+
+		}
+
+
+
+	</script>
+</body>
+</html>
