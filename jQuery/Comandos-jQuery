@@ -1,0 +1,10 @@
+Ready:
+  $(document).ready(function)
+  $(function)
+
+Method Chaining
+
+Pegar elementos:
+  $(<element>)
+  $ -> final, ^ -> inicio, * -> qualquer parte
+  $("input[name^='txt']").css("color", "blue");
