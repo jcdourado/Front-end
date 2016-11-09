@@ -5,18 +5,19 @@
     <title>Aprendizados em jQuery</title>
     </head>
   <body>
-    <ul>
-      <li class=""></li>
-      <li class="div2 div"></li>
-      <li class="div div3"></li>
-    </ul>
+    <div style="height: 40px;">a
+
+    </div>
+
 
     <script src="jquery.min.js"></script>
     <script>
-      $(function (){
-        $("li.div3").text("kkk").css('backgroundColor','blue');
-      });
-
+    $(function()
+    {
+            $("div").animate({ "left" : "100px" }, 1000);
+            $("#divTestBox4").animate({ "left" : "20px" }, 500);
+            $("div").animate({ "right" : "2px" }, 500);
+    });
     </script>
 
 

@@ -8,3 +8,18 @@ Pegar elementos:
   $(<element>)
   $ -> final, ^ -> inicio, * -> qualquer parte
   $("input[name^='txt']").css("color", "blue");
+
+Animações:
+  .fadeIn() -> pode passar 'fast', 'slow', ou um tempo em INT -> pode passar um segundo parametro, que é uma função de callback para quando acabar o tempo
+  .fadeOut()
+  .fadeToggle() -> alterna entre o 'In' e o 'Out'
+
+  .slideUp() -> igual o fade
+  .slideOut()
+  .slideToggle()
+
+  .animate() -> pode criar animacoes, passa o sentido e a qntd, depois um tempo se quiser
+  $("#divTestBox4").animate({ "left" : "100px" }, 1000);
+
+  .stop() -> para uma animação, se passar true mata todas as animações
+          -> se passar outro parametro true ele finaliza a animação sem esperar terminar
