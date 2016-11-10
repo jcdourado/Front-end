@@ -95,6 +95,13 @@ DOM:
     .prevAll()
     .prevUntil()
 
+  Busca:
+    .last() -> pega o ultimo elemento
+      $("div p").last();
+    .first()
+    .eq(1) -> pega determinado elemento
+    .filter() -> pega determinados elementos de acordo com a criteria passada
+    .not() -> contrario do filter
 
 Eventos:
   .bind() -> passar uma ação e coloca o que fazer,
