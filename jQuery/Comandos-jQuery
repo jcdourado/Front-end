@@ -23,3 +23,44 @@ Animações:
 
   .stop() -> para uma animação, se passar true mata todas as animações
           -> se passar outro parametro true ele finaliza a animação sem esperar terminar
+
+DOM:
+  .text() -> Texto -> texto dentro do elemento
+  .val() -> Value -> valor de algum input
+  .html() -> HTML -> igual o Texto mas com marcacao
+
+  Para setar um texto é so passar como parametro
+  No caso do html, deve-se passar elementos : ex: <b>ola</b>
+
+  Se passar uma funcao a estas funceoes, da para definir um retorno para os textos.
+  O primeiro parametro é o index e o segundo é o texto antigo do elemento
+
+  Atributos:
+    .attr() -> pega e altera os atributos
+            -> pode-se passar o atributo e o valor
+            -> ou um array com os atributos e os valor
+            -> pode-se passar também uma função, igual o html, ou text,
+            -> mas tem que passar o atributo a ser modificado
+  Classes:
+    .addClass()
+    .removeClass()
+    .hasClass()
+    .toggleClass()
+
+  .append() -> insere depois
+  .prepend() -> insere antes
+  .appendTo() -> insere depois de algum item
+  .prependTo() -> insere antes de algum item
+  pode se passar vários parametros para eles
+
+  .before() ->  insere antes
+  .after() -> insere depois
+  .insertBefore() ->  insere antes
+  .insertAfter() -> insere depois
+
+  $("#spnTest3").before($("<i></i>").text("before() "));
+  $("<b></b>").text("insertBefore() ").insertBefore("#spnTest3");
+
+  .empty() -> tira os elementos filhos
+  .remove() -> remove o elemento junto com os filhos,
+            se passar um selector ele remove apenas o elemento passado

@@ -5,18 +5,14 @@
     <title>Aprendizados em jQuery</title>
     </head>
   <body>
-    <div style="height: 40px;">a
-
-    </div>
-
+    <div style="height: 40px;"><span>a</span></div>
+    <input value="kkkkk"/>
 
     <script src="jquery.min.js"></script>
     <script>
     $(function()
     {
-            $("div").animate({ "left" : "100px" }, 1000);
-            $("#divTestBox4").animate({ "left" : "20px" }, 500);
-            $("div").animate({ "right" : "2px" }, 500);
+      $('div').attr('style','border: 1px solid black');
     });
     </script>
 
