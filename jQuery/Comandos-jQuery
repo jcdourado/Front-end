@@ -64,3 +64,11 @@ DOM:
   .empty() -> tira os elementos filhos
   .remove() -> remove o elemento junto com os filhos,
             se passar um selector ele remove apenas o elemento passado
+
+Eventos:
+  .bind() -> passar uma ação e coloca o que fazer,
+            se passar uma função com um parametro, da pra pegar os dados do evento
+  .unbind() -> sem nada remove todas as ações
+              pode-se passar várias separando apenas com o espaço
+              pode-se passar uma funcao como segundo parametro
+  .live() -> pega os objetos enquanto o usuario mexe, diferente do bind que é so quando a pagina abre
