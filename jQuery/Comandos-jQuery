@@ -10,15 +10,22 @@ Pegar elementos:
   $("input[name^='txt']").css("color", "blue");
 
 Animações:
+  .hide()
+  .show()
+  .toggle()
+
   .fadeIn() -> pode passar 'fast', 'slow', ou um tempo em INT -> pode passar um segundo parametro, que é uma função de callback para quando acabar o tempo
   .fadeOut()
   .fadeToggle() -> alterna entre o 'In' e o 'Out'
+  .fadeTo(velocidade,opacidade('0.1 ate 1'))
 
   .slideUp() -> igual o fade
   .slideOut()
   .slideToggle()
 
   .animate() -> pode criar animacoes, passa o sentido e a qntd, depois um tempo se quiser
+            para as animacoes funcionarem a posicao deve ser diferente de static
+            pode usar o toggle em propriedades
   $("#divTestBox4").animate({ "left" : "100px" }, 1000);
 
   .stop() -> para uma animação, se passar true mata todas as animações
@@ -47,6 +54,9 @@ DOM:
     .hasClass()
     .toggleClass()
 
+  .css() -> pode passar uma propriedade e seu valor
+        ou passar um array com as propriedades e valores
+
   .append() -> insere depois
   .prepend() -> insere antes
   .appendTo() -> insere depois de algum item
@@ -61,9 +71,30 @@ DOM:
   $("#spnTest3").before($("<i></i>").text("before() "));
   $("<b></b>").text("insertBefore() ").insertBefore("#spnTest3");
 
-  .empty() -> tira os elementos filhos
-  .remove() -> remove o elemento junto com os filhos,
+  Remover:
+    .empty() -> tira os elementos filhos
+    .remove() -> remove o elemento junto com os filhos,
             se passar um selector ele remove apenas o elemento passado
+  Pais:
+    .parent() -> pega os pais diretos
+    .parents() -> pega todos os pais até o html, pode-se passar um parametro com o elemento desejado
+    .parentsUntil() -> pega todos os pais entre o elemento dado
+
+  Filhos:
+    .children() -> pega os filhos diretos e se passar um parametro pega aqueles
+    .find() -> passar um parametro pega so aqueles
+
+  Irmaos:
+    .siblings() -> pega os irmaos, se passar um parametro pega so aqueles
+
+    .next() -> pega o proximo
+    .nextAll() -> pega todos os proximos
+    .nextUntil() -> pega todos ate o parametro
+
+    .prev()
+    .prevAll()
+    .prevUntil()
+
 
 Eventos:
   .bind() -> passar uma ação e coloca o que fazer,
@@ -72,3 +103,8 @@ Eventos:
               pode-se passar várias separando apenas com o espaço
               pode-se passar uma funcao como segundo parametro
   .live() -> pega os objetos enquanto o usuario mexe, diferente do bind que é so quando a pagina abre
+
+Conflitos:
+  Em caso de conflito chama:
+    $.noConflict() -> ele retorna uma referencia pra poder trocar o "$";
+    Pode passar o "$" na chamado da função do ready e usa ela internamente
