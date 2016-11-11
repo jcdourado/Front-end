@@ -125,3 +125,19 @@ Conflitos:
   Em caso de conflito chama:
     $.noConflict() -> ele retorna uma referencia pra poder trocar o "$";
     Pode passar o "$" na chamado da função do ready e usa ela internamente
+
+
+Ajax:
+  $('lugar').load(URL,dados,funcao(response, status, xhr -> Objeto XmlHttpRequest )) -> colocar o conteudo de uma pagina
+                                            status pode ser ('success' ou 'error')
+                  Na URL pode-se passar um id de algum elemento que queremos pegar apenas colocando um espaço na frente
+
+  $.get(URL,funcao(dadosRetornados, status))
+  $.post(URL,dados,funcao(dadosRetornados,status))
+
+  So podem ser aplicadas ao documento:
+    $(document).ajaxStart(funcao) -> para quando começar o ajax
+    $(document).ajaxStop(funcao) -> quando todas as requisições ajax terminam
+    $(document).ajaxSuccess(funcao) -> quando a requisicao tem sucesso
+    $(document).ajaxError(funcao) -> quando a requisicao tem erro
+    $(document).ajaxComplete(funcao) -> quando completou a requisição, tendo falha ou não
