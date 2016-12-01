@@ -1,0 +1,3 @@
+np-app: indica o root de um modulo ou da página
+
+{{}} : para exibir textos e contas.
